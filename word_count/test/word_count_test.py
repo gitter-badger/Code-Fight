@@ -21,5 +21,11 @@ class WordCountTest(SparkTestingBaseTestCase):
         result = answer(rdd)
         assert result == [('world', 2), ('hello',1)]
 
+    def test_same_value(self):
+        input = ["hello hello world world"]
+        rdd = self.sc.parallelize(input)
+        result = answer(rdd)
+        assert result == [('hello', 2), ('world',2)]
+
 if __name__ == "__main__":
     unittest2.main()
