@@ -5,8 +5,6 @@ Welcome to fork this repo to play and contribute your ideas!
 
 # How to use
 
-## Requirements
-
 ### Please prepare the enviroment for this game.
 1. Python 2.7 or above
 2. Spark 1.6.0 or above and set `SPARK_HOME` to the folder
