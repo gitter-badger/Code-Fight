@@ -10,7 +10,7 @@
 You'll have to create a development environment to hack on Code-Fight, using a Git checkout:
 
 * While logged into your GitHub account, navigate to the Code-Fight repo on Github.
-https://github.com/TaiwanSparkUserGroup/Code-Fight[https://github.com/TaiwanSparkUserGroup/Code-Fight]
+https://github.com/TaiwanSparkUserGroup/Code-Fight
 
 * Fork and clone the repository to your GitHub account by clicking the "Fork" button.
 
