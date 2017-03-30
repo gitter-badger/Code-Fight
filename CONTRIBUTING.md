@@ -26,7 +26,6 @@ $ git remote add upstream https://github.com/TaiwanSparkUserGroup/Code-Fight
 # fetch and merge changes from upstream into master
 $ git fetch upstream
 $ git merge upstream/master
-
 ```
 
 Now your local repo is set up such that you will push changes to your GitHub repo, from which you can submit a pull request.
@@ -36,7 +35,6 @@ Now your local repo is set up such that you will push changes to your GitHub rep
 ```
 $ cd ~/Code-Fight
 $ virtualenv -python2.7 env
-
 ```
 
 Now you can install packages you need.
@@ -46,7 +44,6 @@ Now you can install packages you need.
 ```
 $ cd ~/Code-Fight
 $ git checkout -b new_branch
-
 ```
 
 * Before pull request...
@@ -56,7 +53,6 @@ Please check every unittests are passed.
 ```
 $ cd ~/Code-Fight
 $ nosetests
-
 ```
 
 * Now you can commit and pull request
@@ -65,7 +61,6 @@ $ nosetests
 $ cd ~/Code-Fight
 $ git commit -m "what you do in this commit"
 $ git push origin your_branch
-
 ```
 
 After pushing the commit, you can go to your repo on Github and see a new button called `compare & pull requst`.
