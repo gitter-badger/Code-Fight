@@ -21,3 +21,6 @@ Welcome to fork this repo to play and contribute your ideas!
 2. `git clone https://github.com/your-account/Code-Fight`
 3. `cd Code-Fight`
 4. `nosetests`
+
+### If you would like to do something...
+Please see: https://github.com/TaiwanSparkUserGroup/Code-Fight/blob/master/CONTRIBUTING.md for more information.
