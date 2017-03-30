@@ -5,9 +5,7 @@
 3. Send a pull request. 
 4. Thank you for your contribution.
 
-Here are some guidelines
-
-##
+## Here are some guidelines
 
 You'll have to create a development environment to hack on Code-Fight, using a Git checkout:
 
@@ -70,6 +68,6 @@ $ git push origin your_branch
 
 ```
 
-After pushing, you can go to your repo on Github and see a new button called `pull requst`.
+After pushing the commit, you can go to your repo on Github and see a new button called `compare & pull requst`.
 Press it and describe this PR in the text box and we'll review your PR.
 If it is ok, we'll merge your PR with the master branch.
