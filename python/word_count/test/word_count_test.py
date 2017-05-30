@@ -3,7 +3,7 @@
 import unittest2
 from sparktestingbase.testcase import SparkTestingBaseTestCase
 from word_count.solution import answer
-from tools.timeout import *
+from lib.tools.timeout import *
 
 class WordCountTest(SparkTestingBaseTestCase):
     """Simple hell world example test."""
