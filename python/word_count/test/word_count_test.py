@@ -14,11 +14,9 @@ class WordCountTest(SparkTestingBaseTestCase):
         input = ["hello world"]
         rdd = self.sc.parallelize(input)
         timeout_ = timeout(answer, 5)
-        print(rdd)
         result = timeout_(rdd)
         expected = asw(rdd)
-        
-        self.assertRDDEquals(expected, result)
+        assert self.assertRDDEqualsWithOrder(expected, result) == True
     
     def test_order_by_value(self):
         input = ["hello world world"]
@@ -26,7 +24,9 @@ class WordCountTest(SparkTestingBaseTestCase):
         timeout_ = timeout(answer, 5)
         result = timeout_(rdd)
         expected = asw(rdd)
-        self.assertRDDEquals(expected, result)	
+        print(result.collect())
+        print(expected.collect())
+        assert self.assertRDDEqualsWithOrder(expected, result) == True
 
     def test_same_value(self):
         input = ["hello hello world world"]
@@ -34,7 +34,9 @@ class WordCountTest(SparkTestingBaseTestCase):
         timeout_ = timeout(answer, 5)
         result = timeout_(rdd)
         expected = asw(rdd)
-        self.assertRDDEquals(expected, result)
+        assert self.assertRDDEqualsWithOrder(expected, result) == True
+
+    
    
 if __name__ == "__main__":
     unittest2.main()
